@@ -1,0 +1,15 @@
+@charset "utf-8";
+body {
+  background: LightBlue;
+}
+#div1 {
+  width: 90%;
+  height: 400px;
+  background: LightCoral;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: auto;
+}
+#div2 {
+  width: 100%;
+}
