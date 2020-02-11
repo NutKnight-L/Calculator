@@ -1,8 +1,9 @@
 window.onload=function ()
 {
-	var oDiv2=document.getElementById('div2');
+	var oDiv3=document.getElementById('div3'); //数字显示区div3
+	var oDiv4=document.getElementById('div4'); //运算符显示区div4
+	var oDiv5=document.getElementById('div5'); //记忆数据区div5
 	var oBtnCls=document.getElementById('clsbtn');
-	var oBtnTurn=document.getElementById('turn');
 	var oBtn1=document.getElementById('btn1');
 	var oBtn2=document.getElementById('btn2');
 	var oBtn3=document.getElementById('btn3');
@@ -13,113 +14,47 @@ window.onload=function ()
 	var oBtn8=document.getElementById('btn8');
 	var oBtn9=document.getElementById('btn9');
 	var oBtn0=document.getElementById('btn0');
+	var oBtn00=document.getElementById('btn00');
+	var oBtnPoint=document.getElementById('pointbtn');
 	var oBtnJia=document.getElementById('jiabtn');
 	var oBtnJian=document.getElementById('jianbtn');
 	var oBtnCheng=document.getElementById('chengbtn');
 	var oBtnChu=document.getElementById('chubtn');
 	var oBtnDeng=document.getElementById('dengbtn');
-	var it1=0;
-	var num1=0;
-	var num2=0;
-	var tools="";
-	//var i1=Number(it1);
-	//var oBtn3=document.getElementById('btn3');
-	//var oBtn3=document.getElementById('btn3');
-	oBtnCls.onclick=function ()
-	{
-		oDiv2.innerHTML="";
-		num1=0;
-		num2=0;
-		//检测num1,num2的值和类型，以防运算错误
-		//alert(num1+typeof num1+num2+typeof num2);
-	};
 	oBtn1.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+1;
-		//it1=parseInt(it1+'1');
+		oDiv3.innerHTML=1;
 	};
 	oBtn2.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+2;
+		oDiv3.innerHTML=2;
 	};
 	oBtn3.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+3;
+		oDiv3.innerHTML=3;
 	};
 	oBtn4.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+4;
+		oDiv3.innerHTML=4;
 	};
 	oBtn5.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+5;
+		oDiv3.innerHTML=5;
 	};
 	oBtn6.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+6;
+		oDiv3.innerHTML=6;
 	};
 	oBtn7.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+7;
+		oDiv3.innerHTML=7;
 	};
 	oBtn8.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+8;
+		oDiv3.innerHTML=8;
 	};
 	oBtn9.onclick=function ()
 	{
-		oDiv2.innerHTML=oDiv2.innerHTML+9;
-	};
-	oBtn0.onclick=function ()
-	{
-		oDiv2.innerHTML=oDiv2.innerHTML+0;
-	};
-	//加号点击事件
-	oBtnJia.onclick=function ()
-	{
-		num1=parseInt(oDiv2.innerHTML);
-		oDiv2.innerHTML='';
-		tools="+";
-	};
-	//减号点击事件
-	oBtnJian.onclick=function ()
-	{
-		num1=parseInt(oDiv2.innerHTML);
-		oDiv2.innerHTML="";
-		tools="-";
-	};
-	//乘号点击事件
-	oBtnCheng.onclick=function ()
-	{
-		num1=parseInt(oDiv2.innerHTML);
-		oDiv2.innerHTML="";
-		tools="*";
-	};
-	//除号点击事件
-	oBtnChu.onclick=function ()
-	{
-		num1=parseInt(oDiv2.innerHTML);
-		oDiv2.innerHTML="";
-		tools="/";
-	};
-	//等号点击事件
-	oBtnDeng.onclick=function ()
-	{
-		num2=parseInt(oDiv2.innerHTML);
-		switch (tools)
-		{
-			case "+":
-				oDiv2.innerHTML=num1+num2;
-				break;
-			case "-":
-				oDiv2.innerHTML=num1-num2;
-				break;
-			case "*":
-				oDiv2.innerHTML=num1*num2;
-				break;
-			case "/":
-				oDiv2.innerHTML=num1/num2;
-				break;
-		}
+		oDiv3.innerHTML=9;
 	};
 };
