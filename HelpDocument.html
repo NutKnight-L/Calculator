@@ -8,16 +8,30 @@
 	<title>使用说明：</title>
   </head>
   <body>
-	<div id="div1">
-	  <a href="index.html">返回</a>
-	  <div id="div2">
-	    <ol>
-		  <li>目前只能进行一步运算，即每次运算，只能有一个运算符.
-		  <li>记忆数据会提示你上一次运算的结果，也包括按下运算符后的数据.
-		  <li>结束运算后，可按下cls清除储存的数据.
-		  <li>因为代码缺陷，所以乱按可能会显示NaN，只要按下cls即可重置.
-	    </ol>
+	<div id="top">
+	  <div id="item1">
+		<a href="index.html">返回</a>
 	  </div>
 	</div>
+	  <div id="content">
+		<table>
+		  <tr>
+			<td>1.如果显示NaN字样，按下cls即可解决</td>
+		  </tr>
+		  <tr>
+			<td>2.目前只能先输入第一个数字，选择运算符，再输入第二个数字，按等于计算结果</td>
+		  </tr>
+		  <tr>
+			<td>3.每次按下的数值，或计算得出的结果会储存在memory中，memory中的值可以继续进行计算</td>
+		  </tr>
+		  <tr>
+			<td>4.按下cls后，会清空所有储存的数据，如果出错就按它</td>
+		  </tr>
+		</table>
+	  </div>
+	  <div id="footer">
+		Page Design & Code Make<br>
+		github @nutknight-l
+	  </div>
   </body>
 </html>
