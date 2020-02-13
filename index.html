@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<!--简体中文-->
-<html lang="zh-cmn-Hans">
-<head>
+<html>
+  <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<title>calculator</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<script src="js/scripts.js"></script>
-</head>
-<body>
-	<div id="div1">
-		<div id="div2">
-		</div>
-		<div id="div3">
-			<input value="cls"></input><br>
-			<input value="1"></input>
-			<input value="2"></input>
-			<input value="3"></input>
-			<input value="4"></input><br>
-			<input value="5"></input>
-			<input value="6"></input>
-			<input value="7"></input>
-			<input value="8"></input><br>
-			<input value="9"></input>
-			<input value="0"></input>
-			<input value="."></input>
-			<input value="+"></input><br>
-			<input value="-"></input>
-			<input value="*"></input>
-			<input value="/"></input>
-			<input value="="></input>
-		</div>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+	<link href="css/a-style.css" rel="stylesheet" type="text/css"/>
+	<script src="js/scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+	<div class="header">
+	  <div id="item1">
+		<a href="helpdocument.html">使用说明</a>
+	  </div>
 	</div>
-</body>
+	
+	<div id="div1">
+	  <div id="div2">
+	  <!-- 数字显示区 -->
+	  <div id="div3">
+	  </div>
+	  <!-- 运算符显示区 -->
+	  <div id="div4">
+	  </div>
+	  <!-- 记忆数据区 -->
+	  <div id="div5">
+		memory:
+	  </div>
+	  <div id="div6">
+	    <input id="btn1" type="button" value="1"><input id="btn2" type="button" value="2"><input id="btn3" type="button" value="3"><input id="jiabtn" type="button" value="+"><input id="jianbtn" type="button" value="-">
+	    <br>
+	    <input id="btn4" type="button" value="4"><input id="btn5" type="button" value="5"><input id="btn6" type="button" value="6"><input id="chengbtn" type="button" value="*"><input id="chubtn" type="button" value="/">
+	    <br>
+	    <input id="btn7" type="button" value="7"><input id="btn8" type="button" value="8"><input id="btn9" type="button" value="9"><input id="clsbtn" type="button" value="cls" style="width: 100px;">
+		<br>
+	    <input id="btn0" type="button" value="0"><input id="pointbtn" type="button" value="."><input id="btn00" type="button" value="00"><input id="dengbtn" type="button" value="=" style="width: 100px;">
+	  </div>
+	  </div>
+	</div>
+	
+	<div class="footer">
+	  Page Design & Code Make<br>
+	  github @nutknight-l
+	</div>
+  </body>
 </html>
